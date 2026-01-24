@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Oyun Geliştirme | ChessRehber</title>
+    <meta name="description" content="Satrançta açılış, orta oyun ve oyun sonu için doğru düşünme sistemi ve planlama mantığı.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .intro p {
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .bolum {
+            background: #fff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .bolum h2 {
+            margin-top: 0;
+        }
+
+        .bolum ul {
+            padding-left: 20px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .ornek {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .alt-mesaj {
+            background: #1f1f1f;
+            color: #ccc;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .alt-mesaj p {
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="temeller.html">Temeller</a>
+    <a href="taktikler.html">Taktikler</a>
+    <a href="gelisim.html">Oyun Geliştirme</a>
+    <a href="calisma-programi.html">Çalışma Programı</a>
+    <a href="sik-yapilan-hatalar.html">Sık Yapılan Hatalar</a>
+    <a href="nasil-duzeltirim.html">Nasıl Düzeltirim?</a>
+    <a href="seviyeni-olc.html">Seviyeni Ölç</a>
+    <a href="satranc-sozlugu.html">Terimler</a>
+</nav>
+
+<div class="container">
+
+    <div class="intro">
+        <h1>Oyun Geliştirme</h1>
+        <p>
+            Satrançta gelişim; daha çok hamle bilmek değil,
+            <strong>daha doğru düşünmek</strong> demektir.
+            Bu sayfa, oyuna nasıl bakman gerektiğini öğretir.
+        </p>
+    </div>
+
+    <!-- AÇILIŞ -->
+    <div class="bolum">
+        <h2>♟️ Açılış Prensipleri</h2>
+        <ul>
+            <li><strong>Merkezi kontrol et:</strong> Merkez, taşlarının aktif olmasını sağlar.</li>
+            <li><strong>Taşlarını geliştir:</strong> Gelişmeyen taş oyuna katılamaz.</li>
+            <li><strong>Şah güvenliği:</strong> Erken saldırılardan korunmak için şarttır.</li>
+            <li><strong>Veziri erken çıkarma:</strong> Tempo kaybına yol açar.</li>
+        </ul>
+
+        <div class="ornek">
+            <strong>Örnek:</strong> Tüm taşlar gelişmeden yapılan saldırılar,
+            rakibin savunma kurup üstünlüğü ele almasına neden olur.
+        </div>
+    </div>
+
+    <!-- ORTA OYUN -->
+    <div class="bolum">
+        <h2>🧠 Oyun Ortası Planları</h2>
+        <ul>
+            <li><strong>Zayıf kareleri hedefle:</strong> Savunulamayan kareler uzun vadeli avantajdır.</li>
+            <li><strong>Açık hatları kullan:</strong> Kaleler açık hatlarda güçlenir.</li>
+            <li><strong>Taş uyumu:</strong> Taşlar tek tek değil, birlikte çalışmalıdır.</li>
+            <li><strong>Rakibin planını boz:</strong> Sadece kendi fikrini değil, rakibi de düşün.</li>
+        </ul>
+
+        <div class="ornek">
+            <strong>Sonuç:</strong> Plansız hamleler eşit pozisyonları bile kaybettirebilir.
+        </div>
+    </div>
+
+    <!-- OYUN SONU -->
+    <div class="bolum">
+        <h2>♙ Oyun Sonu Mantığı</h2>
+        <ul>
+            <li><strong>Şahı aktif kullan:</strong> Oyun sonunda şah bir saldırı taşıdır.</li>
+            <li><strong>Piyon yapısını anla:</strong> Geçer piyonlar oyunu kazandırır.</li>
+            <li><strong>Basitleştir:</strong> Kazanılan pozisyonlar sadeleştirilmelidir.</li>
+            <li><strong>Sabırlı ol:</strong> Oyun sonları teknik gerektirir.</li>
+        </ul>
+
+        <div class="ornek">
+            <strong>Örnek:</strong> Aktif şah + geçer piyon = çoğu zaman galibiyet.
+        </div>
+    </div>
+
+    <!-- DÜŞÜNME -->
+    <div class="bolum">
+        <h2>🎯 Düşünme Sistemi</h2>
+        <ul>
+            <li><strong>Rakibin tehdidi var mı?</strong> Önce savun.</li>
+            <li><strong>Aday hamleler belirle:</strong> Rastgele hamle yapma.</li>
+            <li><strong>Taktik kontrolü:</strong> Her hamleden önce bak.</li>
+            <li><strong>Plan yap ve uygula:</strong> Hamlelerin bir amacı olsun.</li>
+        </ul>
+
+        <div class="ornek">
+            <strong>Sonuç:</strong> Aynı seviyedeki oyuncuları ayıran şey
+            hamle sayısı değil, düşünme kalitesidir.
+        </div>
+    </div>
+
+</div>
+
+<div class="alt-mesaj">
+    <p>
+        Satrançta gerçek güç,
+        tahtaya bakınca ne yapılması gerektiğini
+        <strong>hissetmekle</strong> gelir.
+        Bu sayfa seni o seviyeye taşımak için hazırlandı.
+    </p>
+</div>
+
+<footer>
+    © 2025 ChessRehber.com | Satranç Eğitim Platformu
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Seviyeni Ölç | ChessRehber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.question{
+background:#fff;
+padding:25px;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+label{display:block;margin:6px 0;}
+img{max-width:240px;margin-top:10px;}
+button{
+padding:14px 30px;
+border-radius:30px;
+background:#c9a24d;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body onload="baslat()">
+
+<nav>
+<a href="index.html">Ana Sayfa</a>
+<a href="temeller.html">Temeller</a>
+<a href="taktikler.html">Taktikler</a>
+<a href="gelisim.html">Oyun Geliştirme</a>
+<a href="calisma-programi.html">Çalışma Programı</a>
+<a href="sik-yapilan-hatalar.html">Sık Yapılan Hatalar</a>
+<a href="nasil-duzeltirim.html">Nasıl Düzeltirim?</a>
+<a href="seviyeni-olc.html">Seviyeni Ölç</a>
+<a href="satranc-sozlugu.html">Terimler</a>
+</nav>
+
+<div class="container">
+<h1>Seviyeni Ölç</h1>
+
+<form id="quiz">
+
+<!-- =====================
+1–2 (AYNEN KALIYOR)
+===================== -->
+<div id="sure" style="font-weight:bold;margin-bottom:15px;"></div>
+
+<div class="question">
+<h3>1) Satrançta amaç nedir?</h3>
+<label><input type="radio" name="q1" value="0">A) Taş kazanmak</label>
+<label><input type="radio" name="q1" value="2">B) Rakip şahı mat etmek</label>
+<label><input type="radio" name="q1" value="0">C) Süreyi bitirmek</label>
+<label><input type="radio" name="q1" value="0">D) Vezir almak</label>
+</div>
+
+<div class="question">
+<h3>2) Satrançta ilk hamleyi kim yapar?</h3>
+<label><input type="radio" name="q2" value="2">A) Beyaz</label>
+<label><input type="radio" name="q2" value="0">B) Siyah</label>
+<label><input type="radio" name="q2" value="0">C) Rastgele</label>
+<label><input type="radio" name="q2" value="0">D) Hakem</label>
+</div>
+
+<!-- =====================
+3–15 SÖZEL (SENİN VERDİKLERİN)
+===================== -->
+
+<div class="question">
+<h3>3) Şah hangi durumda “şah mat” olur?</h3>
+<label><input type="radio" name="q3" value="0">A) Rakibin tüm taşları bitince</label>
+<label><input type="radio" name="q3" value="2">B) Rakip şahını kurtaramaz hâle gelince</label>
+<label><input type="radio" name="q3" value="0">C) Rakibin şahını yiyince</label>
+<label><input type="radio" name="q3" value="0">D) Maç berabere bitince</label>
+</div>
+
+<div class="question">
+<h3>4) Rok hamlesi hangi iki taş ile yapılır?</h3>
+<label><input type="radio" name="q4" value="0">A) Vezir ve Kale</label>
+<label><input type="radio" name="q4" value="0">B) Şah ve Vezir</label>
+<label><input type="radio" name="q4" value="2">C) Şah ve Kale</label>
+<label><input type="radio" name="q4" value="0">D) Vezir ve Fil</label>
+</div>
+
+<div class="question">
+<h3>5) İzole piyon nedir?</h3>
+<label><input type="radio" name="q5" value="2">A) Sağında ve solunda piyon olmayan piyon</label>
+<label><input type="radio" name="q5" value="0">B) Üst üste iki piyon</label>
+<label><input type="radio" name="q5" value="0">C) Yan yana iki piyon</label>
+<label><input type="radio" name="q5" value="0">D) Üç piyon üst üste</label>
+</div>
+
+<div class="question">
+<h3>6) Açık hat en iyi hangi taşla kullanılır?</h3>
+<label><input type="radio" name="q6" value="0">A) Şah</label>
+<label><input type="radio" name="q6" value="0">B) At</label>
+<label><input type="radio" name="q6" value="0">C) Fil</label>
+<label><input type="radio" name="q6" value="2">D) Kale</label>
+</div>
+
+<div class="question">
+<h3>7) Oyun sonunda önemli olan nedir?</h3>
+<label><input type="radio" name="q7" value="0">A) Piyonları sürmek</label>
+<label><input type="radio" name="q7" value="0">B) Hiç sürmemek</label>
+<label><input type="radio" name="q7" value="2">C) Şahı merkeze getirmek</label>
+<label><input type="radio" name="q7" value="0">D) Şahı korumak</label>
+</div>
+
+<div class="question">
+<h3>8) Rakip sadece şahsa sahipse hangisiyle mat edemezsin? (Rakibin en iyi hamleleri yaptığı düşünülmelidir.)</h3>
+<label><input type="radio" name="q8" value="2">A) 2 At</label>
+<label><input type="radio" name="q8" value="0">B) At + Fil</label>
+<label><input type="radio" name="q8" value="0">C) 2 Fil</label>
+<label><input type="radio" name="q8" value="0">D) 3 Piyon</label>
+</div>
+
+<div class="question">
+<h3>9) Proflaksi nedir?</h3>
+<label><input type="radio" name="q9" value="0">A) Mat hamlesi</label>
+<label><input type="radio" name="q9" value="0">B) Kayıp hamle</label>
+<label><input type="radio" name="q9" value="0">C) Kazandıran plan</label>
+<label><input type="radio" name="q9" value="2">D) Rakibin planını önlemek</label>
+</div>
+
+<div class="question">
+<h3>10) Hangi piyon yapısına sahipsen kazanmaz daha zorlaşır?</h3>
+<label><input type="radio" name="q10" value="0">A) Geçer piyon</label>
+<label><input type="radio" name="q10" value="2">B) Double izole</label>
+<label><input type="radio" name="q10" value="0">C) Bağlı geçer</label>
+<label><input type="radio" name="q10" value="0">D) Uzak geçer</label>
+</div>
+
+<div class="question">
+<h3>11) İzole piyonda hangi taşlar kalmalı?</h3>
+<label><input type="radio" name="q11" value="0">A) Vezir & Kale</label>
+<label><input type="radio" name="q11" value="2">B) At & Fil</label>
+<label><input type="radio" name="q11" value="0">C) Piyonlar</label>
+<label><input type="radio" name="q11" value="0">D) Hepsi</label>
+</div>
+
+<div class="question">
+<h3>12) Taş öndeysen ne yapmalısın?</h3>
+<label><input type="radio" name="q12" value="0">A) Değiştirme</label>
+<label><input type="radio" name="q12" value="0">B) Hepsini değiştir</label>
+<label><input type="radio" name="q12" value="2">C) Piyonları bırak</label>
+<label><input type="radio" name="q12" value="0">D) Sadece vezir</label>
+</div>
+
+<div class="question">
+<h3>13) Piyon son sıraya gelirse ne olur?</h3>
+<label><input type="radio" name="q13" value="0">A) Hiçbir şey</label>
+<label><input type="radio" name="q13" value="0">B) Oyundan çıkar</label>
+<label><input type="radio" name="q13" value="0">C) Geri döner</label>
+<label><input type="radio" name="q13" value="2">D) Taş terfisi olur</label>
+</div>
+
+<div class="question">
+<h3>14) Geçerken alma hangi taşla olur?</h3>
+<label><input type="radio" name="q14" value="2">A) Piyon</label>
+<label><input type="radio" name="q14" value="0">B) Vezir</label>
+<label><input type="radio" name="q14" value="0">C) At</label>
+<label><input type="radio" name="q14" value="0">D) Kale</label>
+</div>
+
+<div class="question">
+<h3>15) Merkez kapalıysa hangi taş güçlüdür?</h3>
+<label><input type="radio" name="q15" value="0">A) Vezir</label>
+<label><input type="radio" name="q15" value="0">B) Fil</label>
+<label><input type="radio" name="q15" value="0">C) Kale</label>
+<label><input type="radio" name="q15" value="2">D) At</label>
+</div>
+
+<!-- =====================
+16–25 GÖRSELLİ
+===================== -->
+
+<!-- Örnek yapı, sen img klasörüne koy -->
+<!-- soru16.png → soru25.png -->
+
+<!-- 16 -->
+<div class="question">
+<h3>16) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru16.png">
+<label><input type="radio" name="q16" value="2">A</label>
+<label><input type="radio" name="q16" value="0">B</label>
+<label><input type="radio" name="q16" value="0">C</label>
+<label><input type="radio" name="q16" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>17) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru17.png">
+<label><input type="radio" name="q17" value="2">A</label>
+<label><input type="radio" name="q17" value="0">B</label>
+<label><input type="radio" name="q17" value="0">C</label>
+<label><input type="radio" name="q17" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>18) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru18.png">
+<label><input type="radio" name="q18" value="2">A</label>
+<label><input type="radio" name="q18" value="0">B</label>
+<label><input type="radio" name="q18" value="0">C</label>
+<label><input type="radio" name="q18" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>19) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru19.png">
+<label><input type="radio" name="q19" value="2">A</label>
+<label><input type="radio" name="q19" value="0">B</label>
+<label><input type="radio" name="q19" value="0">C</label>
+<label><input type="radio" name="q19" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>20) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru20.png">
+<label><input type="radio" name="q20" value="2">A</label>
+<label><input type="radio" name="q20" value="0">B</label>
+<label><input type="radio" name="q20" value="0">C</label>
+<label><input type="radio" name="q20" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>21) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru21.png">
+<label><input type="radio" name="q21" value="2">A</label>
+<label><input type="radio" name="q21" value="0">B</label>
+<label><input type="radio" name="q21" value="0">C</label>
+<label><input type="radio" name="q21" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>22) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru22.png">
+<label><input type="radio" name="q22" value="2">A</label>
+<label><input type="radio" name="q22" value="0">B</label>
+<label><input type="radio" name="q22" value="0">C</label>
+<label><input type="radio" name="q22" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>23) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru23.png">
+<label><input type="radio" name="q23" value="2">A</label>
+<label><input type="radio" name="q23" value="0">B</label>
+<label><input type="radio" name="q23" value="0">C</label>
+<label><input type="radio" name="q23" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>24) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru24.png">
+<label><input type="radio" name="q24" value="2">A</label>
+<label><input type="radio" name="q24" value="0">B</label>
+<label><input type="radio" name="q24" value="0">C</label>
+<label><input type="radio" name="q24" value="0">D</label>
+</div>
+
+<div class="question">
+<h3>25) Bu pozisyonda en iyi hamle?</h3>
+<img src="img/soru25.png">
+<label><input type="radio" name="q25" value="2">A</label>
+<label><input type="radio" name="q25" value="0">B</label>
+<label><input type="radio" name="q25" value="0">C</label>
+<label><input type="radio" name="q25" value="0">D</label>
+</div>
+
+<!-- 17–25 aynı yapı -->
+<!-- Cevapları istersen sonraki adımda netleştiririz -->
+
+<button type="button" onclick="hesapla()">Testi Bitir</button>
+</form>
+
+<div id="sonuc"></div>
+</div>
+
+<script>
+    let sure = 600; // 600 saniye = 10 dakika
+let timer;
+
+function baslat(){
+    timer = setInterval(() => {
+        let dakika = Math.floor(sure / 60);
+        let saniye = sure % 60;
+
+        document.getElementById("sure").innerHTML =
+            "⏱️ Kalan Süre: " + dakika + ":" + (saniye < 10 ? "0"+saniye : saniye);
+
+        sure--;
+
+        if(sure < 0){
+            clearInterval(timer);
+            alert("⏰ Süre doldu! Test otomatik bitirildi.");
+            hesapla();
+        }
+    }, 1000);
+}
+function hesapla(){
+    let puan = 0;
+
+    for(let i = 1; i <= 25; i++){
+        let secilen = document.querySelector('input[name="q'+i+'"]:checked');
+        if(secilen){
+            puan += Number(secilen.value);
+        }
+    }
+
+    let sonuc = document.getElementById("sonuc");
+    sonuc.style.padding = "25px";
+    sonuc.style.marginTop = "25px";
+    sonuc.style.borderRadius = "12px";
+    sonuc.style.fontSize = "16px";
+
+    if(puan <= 10){
+        sonuc.style.background = "#e8f5e9";
+        sonuc.style.border = "2px solid #43a047";
+        sonuc.innerHTML = `
+            <h2 style="color:#2e7d32;">🟢 Seviye: Yeni Başlayan</h2>
+            <p><strong>Durum:</strong> Satranç temellerini öğrenme aşamasındasın.</p>
+            <ul>
+                <li>Taşların görevlerini öğren</li>
+                <li>Basit taktikler çalış</li>
+                <li>Kısa oyunlar oyna</li>
+            </ul>
+            <button onclick="location.reload()">
+    Testi Tekrar Çöz
+</button>
+
+            <a href="temeller.html" style="display:inline-block;margin:10px 10px 0 0;padding:12px 22px;background:#43a047;color:#fff;border-radius:25px;text-decoration:none;">
+                Temellere Git
+            </a>
+
+            <a href="taktikler.html" style="display:inline-block;margin-top:10px;padding:12px 22px;border:2px solid #43a047;color:#43a047;border-radius:25px;text-decoration:none;">
+                Basit Taktikler
+            </a>
+        `;
+    }
+    else if(puan <= 18){
+        sonuc.style.background = "#fffde7";
+        sonuc.style.border = "2px solid #f9a825";
+        sonuc.innerHTML = `
+            <h2 style="color:#f57f17;">🟡 Seviye: Orta</h2>
+            <p><strong>Durum:</strong> Oyunu anlıyorsun, plan yapabiliyorsun.</p>
+            <ul>
+                <li>Oyunsonu bilgisini geliştir</li>
+                <li>Taş koordinasyonuna odaklan</li>
+                <li>Kendi oyunlarını analiz et</li>
+            </ul>
+            <button onclick="location.reload()">
+    Testi Tekrar Çöz
+</button>
+
+            <a href="taktikler.html" style="display:inline-block;margin:10px 10px 0 0;padding:12px 22px;background:#f9a825;color:#000;border-radius:25px;text-decoration:none;">
+                Taktiklere Git
+            </a>
+
+            <a href="gelisim.html" style="display:inline-block;margin-top:10px;padding:12px 22px;border:2px solid #f9a825;color:#f9a825;border-radius:25px;text-decoration:none;">
+                Oyun Geliştirme
+            </a>
+        `;
+    }
+    else{
+        sonuc.style.background = "#e3f2fd";
+        sonuc.style.border = "2px solid #1e88e5";
+        sonuc.innerHTML = `
+            <h2 style="color:#1565c0;">🔵 Seviye: İleri</h2>
+            <p><strong>Durum:</strong> Satranç anlayışın oturmuş durumda.</p>
+            <ul>
+                <li>Derin analiz yap</li>
+                <li>Usta oyunları incele</li>
+                <li>Turnuva pratiği yap</li>
+            </ul>
+            <button onclick="location.reload()">
+    Testi Tekrar Çöz
+</button>
+
+            <a href="gelisim.html" style="display:inline-block;margin:10px 10px 0 0;padding:12px 22px;background:#1e88e5;color:#fff;border-radius:25px;text-decoration:none;">
+                Gelişim Sayfası
+            </a>
+
+            <a href="calisma-programi.html" style="display:inline-block;margin-top:10px;padding:12px 22px;border:2px solid #1e88e5;color:#1e88e5;border-radius:25px;text-decoration:none;">
+                Çalışma Programı
+            </a>
+        `;
+    }
+}
+</script>
+
+
+
+</body>
+</html>
